@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit" >
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <title></title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="header">
+		<a href="javascript:;">
+		    <img src="./img/logo.png" />
+		</a>
+		<div class="right">
+			<div class="dl_zc_box">
+				<a href="index.html">首页</a>
+				<b class="line"></b>
+				<a href="javascript:;">帮助中心</a>
+			</div>
+		</div>
+	</div>
+	<div class="nav h_45"></div>
+    
+    <div class="section login_box">
+        <div>
+			<img src="./img/login_img.png" />
+			<div class="zhdl_box">
+				<form>
+					<h3>登录账号</h3>
+					<div class="input_box">
+						<input type="text" name="" id="" value="" placeholder="账号" />
+					</div>
+					<div class="input_box">
+						<input type="text" name="" id="" value="" placeholder="密码" />
+					</div>
+					<div class="sjhdl_jzdlm">
+						<a href="javascript:;">手机号登录</a>
+						<a class="remember" href="javascript:;"><i class="i_noRememberAccount"></i>记住登录名</a>
+					</div>
+					<input type="submit" class="btn_login" value="登录">
+					<div class="mfzc_wjmm_syqtzh">
+						<a href="javascript:;">免费注册</a>
+						<a class="wjmm" href="javascript:;">忘记密码</a>
+						<a href="javascript:;">使用其它账号</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<img src="./img/zqdm.png" />
+		<div class="links">
+			<div>
+				<span class="gzwm">关注我们</span>
+				<img src="./img/gzh.png" />
+				<span class="wxgzh">微信公众号</span>
+			</div>
+			<a href="javascript:;">关于我们</a>
+			<a href="javascript:;">常见问题</a>
+			<a href="javascript:;">服务协议</a>
+			<a href="javascript:;">联系我们</a>
+			<a href="javascript:;">帮助中心</a>
+			<a href="javascript:;">商务合作</a>
+			<a href="javascript:;">轩辕网上办公平台</a>
+			<a href="javascript:;">轩辕邮件系统</a>
+		</div>
+		<div class="bq">
+			<p>广东轩辕网络科技股份有限公司</p>
+			<p>轩辕网络-领先AI教育解决方案提供商</p>
+			<p>Copyright © 2016 xuanyuan.com All Rights Reserved</p>
+			<p>备案信息：广东轩辕网络科技股份有限公司、广州轩辕研究院有限公司</p>
+			<p>备案/许可证编号为：粤ICP备19151435号</p>
+		</div>
+	</div>
+</body>
+<script src="./js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript">
+	$(function(){
+	    //记住密码
+	    $(".remember").click(function(){
+	    	if($(this).children("i").hasClass("i_rememberAccount")){
+	    		$(this).children("i").removeClass("i_rememberAccount").addClass("i_noRememberAccount");
+	    	}else{
+	    		$(this).children("i").removeClass("i_noRememberAccount").addClass("i_rememberAccount");
+	    	}
+	    });
+	});
+</script>
+</html>
